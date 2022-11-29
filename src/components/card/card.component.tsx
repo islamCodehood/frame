@@ -8,7 +8,7 @@ type Props = {
 
 const Card = ({ film }: Props) => {
   return (
-    <Link to={`/cards/${film.id}`} className="latestPosts_card">
+    <Link to={`/${film.id}`} className="latestPosts_card">
       <div className="latestPosts_cardImage">
         <img
           src={`https://image.tmdb.org/t/p/w200${film.poster_path}`}
