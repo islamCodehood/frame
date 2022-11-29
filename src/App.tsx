@@ -7,11 +7,13 @@ import Journal from './pages/journal/journal.component'
 import Members from './pages/members/members.component'
 import Header from './components/header/header.component'
 import Auth from './pages/auth/auth.component'
+import Footer from './components/footer/footer.component'
 
 function App() {
     return (
         <div className="wrapper">
             <Header />
+            <main>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/films" element={<Films />} />
@@ -20,6 +22,8 @@ function App() {
                 <Route path="/members" element={<Members />} />
                 <Route path="/auth" element={<Auth />} />
             </Routes>
+            </main>
+            <Footer />
         </div>
     )
 }

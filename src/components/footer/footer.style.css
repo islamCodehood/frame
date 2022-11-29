@@ -1,0 +1,11 @@
+.footer {
+  @apply h-8;
+}
+
+.footer_message {
+  @apply text-center text-lg text-slate-400;
+}
+
+.footer_contact {
+  @apply text-gray-200 underline;
+}
