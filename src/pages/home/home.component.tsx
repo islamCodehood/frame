@@ -1,10 +1,10 @@
-import Cards from "../../components/cards/cards.component"
+import Cards from '../../components/cards/cards.component'
 
 const Home = () => {
   return (
-  <>
-    <Cards />
-  </>
+    <>
+      <Cards />
+    </>
   )
 }
 

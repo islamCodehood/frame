@@ -1,85 +1,82 @@
 .latestPosts_card {
-	width: 100%;
-	border-radius: 10px;
-	padding: 12px;
-	display: flex;
-	gap: 12px;
-	background-color: #fff;
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-	transition: all 0.3s ease-in-out;
+  width: 100%;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
-	.latestPosts_card {
-		width: 32%;
-		min-height: 300px;
-		border-radius: 5px;
-		padding: 0;
-		flex-direction: column;
-		justify-content: flex-start;
-		gap: 0;
-	}
+  .latestPosts_card {
+    width: 32%;
+    min-height: 300px;
+    border-radius: 5px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+  }
 }
 
 @media screen and (min-width: 992px) {
-	.latestPosts_card {
-		width: 32%;
-		min-height: 380px;
-		border-radius: 5px;
-		padding: 0;
-		flex-direction: column;
-		justify-content: flex-start;
-		gap: 0;
-	}
-
+  .latestPosts_card {
+    width: 32%;
+    min-height: 380px;
+    border-radius: 5px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+  }
 }
 
 .latestPosts_cardImage {
-	min-width: 125px;
-	width: 125px;
-	height: 125px;
-	border-radius: 10px;
+  min-width: 125px;
+  width: 125px;
+  height: 125px;
+  border-radius: 10px;
 }
-
-
 
 @media screen and (min-width: 768px) {
-	.latestPosts_cardImage img {
-		border-radius: 5px 5px 0 0;
-	}
+  .latestPosts_cardImage img {
+    border-radius: 5px 5px 0 0;
+  }
 }
 
 .latestPosts_cardImage {
-	min-width: 90px;
-	width: 90px;
-	height: 90px;
+  min-width: 90px;
+  width: 90px;
+  height: 90px;
 }
 
 .latestPosts_cardBody {
-	padding: 8px;
+  padding: 8px;
 }
 
 @media screen and (min-width: 768px) {
-	.latestPosts_cardImage {
-		width: 100%;
-		min-width: 100%;
-		height: -webkit-fit-content;
-		height: -moz-fit-content;
-		height: fit-content;
-		border-radius: 0;
-	}
+  .latestPosts_cardImage {
+    width: 100%;
+    min-width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 0;
+  }
 }
 @media screen and (min-width: 768px) {
-	.latestPosts_cardBody {
-		padding: 12px;
-	}
+  .latestPosts_cardBody {
+    padding: 12px;
+  }
 }
 @media screen and (min-width: 992px) {
-	.latestPosts_cardBody {
-		padding: 24px;
-	}
+  .latestPosts_cardBody {
+    padding: 24px;
+  }
 }
 
 .latestPosts_cardTitle {
-	font-weight: 700;
+  font-weight: 700;
 }
