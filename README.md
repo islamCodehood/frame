@@ -51,4 +51,9 @@ Movies lovers web platform.
 7. Films
 8. Journal
 
-# frame
+----
+
+- posters and backdrops sizes: 200, 300, 400, 500, original
+- url for the images: 
+`https://image.tmdb.org/t/p/[original | w200 | w300 | w400 | w500]/[image-path]`
+    
