@@ -1,7 +1,5 @@
 const Lists = () => {
-  return ( 
-    <div>Lists</div>
-   );
+    return <div>Lists</div>
 }
- 
-export default Lists;
+
+export default Lists

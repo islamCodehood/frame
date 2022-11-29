@@ -1,7 +1,7 @@
 .list_item {
-  @apply md:inline-block md:mx-4 text-2xl md:text-base w-full md:w-fit text-center  
+    @apply md:inline-block md:mx-4 text-2xl md:text-base w-full md:w-fit text-center;
 }
 
 .list_item_link {
-  @apply w-full md:w-fit block 
+    @apply w-full md:w-fit block;
 }
