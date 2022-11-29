@@ -10,22 +10,22 @@ import Auth from './pages/auth/auth.component'
 import Footer from './components/footer/footer.component'
 
 function App() {
-    return (
-        <div className="wrapper">
-            <Header />
-            <main>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/films" element={<Films />} />
-                <Route path="/lists" element={<Lists />} />
-                <Route path="/journal" element={<Journal />} />
-                <Route path="/members" element={<Members />} />
-                <Route path="/auth" element={<Auth />} />
-            </Routes>
-            </main>
-            <Footer />
-        </div>
-    )
+  return (
+    <div className="wrapper">
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/films" element={<Films />} />
+          <Route path="/lists" element={<Lists />} />
+          <Route path="/journal" element={<Journal />} />
+          <Route path="/members" element={<Members />} />
+          <Route path="/auth" element={<Auth />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  )
 }
 
 export default App

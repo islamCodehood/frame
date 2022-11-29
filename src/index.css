@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 * {
-    color: #9ab;
-    font-family: 'Lato', sans-serif;
+  color: #9ab;
+  font-family: 'Lato', sans-serif;
 }
 body {
-    @apply m-0 relative;
-    background: #14181c;
+  @apply m-0 relative;
+  background: #14181c;
 }

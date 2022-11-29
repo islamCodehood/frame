@@ -1,36 +1,36 @@
 .topBar {
-    @apply flex justify-between md:justify-center gap-20 w-full items-start;
+  @apply flex justify-between md:justify-center gap-20 w-full items-start;
 }
 
 .logo {
-    @apply capitalize text-2xl font-black	 text-slate-300 tracking-wider;
+  @apply capitalize text-2xl font-black	 text-slate-300 tracking-wider;
 }
 
 .nav_list {
-    @apply p-0 m-auto md:m-0 w-full h-full flex flex-col justify-evenly items-center  list-none text-lg md:inline-block md:my-1;
+  @apply p-0 m-auto md:m-0 w-full h-full flex flex-col justify-evenly items-center  list-none text-lg md:inline-block md:my-1;
 }
 .nav {
-    @apply flex flex-col md:flex-row  md:justify-between absolute inset-0 w-screen h-screen  
+  @apply flex flex-col md:flex-row  md:justify-between absolute inset-0 w-screen h-screen  
   md:relative md:bg-transparent md:w-full md:h-full px-5 md:px-0 z-10;
-    background: #14181c;
+  background: #14181c;
 }
 
 .nav_button {
-    @apply block md:hidden border p-2 my-1;
+  @apply block md:hidden border p-2 my-1;
 }
 
 .nav_closeButton {
-    @apply w-fit self-end;
+  @apply w-fit self-end;
 }
 
 .signinButton {
-    @apply border px-2 py-1 my-1;
+  @apply border px-2 py-1 my-1;
 }
 
 .navWrapper {
-    @apply flex gap-3;
+  @apply flex gap-3;
 }
 
 .menuAndButtonWrapper {
-    @apply order-last md:order-first;
+  @apply order-last md:order-first;
 }
