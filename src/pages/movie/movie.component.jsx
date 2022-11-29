@@ -1,11 +1,7 @@
-import {params} from 'react-router-dom'
+import { params } from 'react-router-dom'
 const Movie = () => {
-  const {id} = params()
-  return ( 
-    <div>
-      {id}
-    </div>
-   );
+  const { id } = params()
+  return <div>{id}</div>
 }
- 
-export default Movie;
+
+export default Movie

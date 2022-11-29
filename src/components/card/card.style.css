@@ -1,5 +1,4 @@
 .latestPosts_card {
-
   display: flex;
   gap: 12px;
   background-color: #fff;
@@ -29,8 +28,6 @@
   width: 100%;
   border-radius: 3px;
 }
-
-
 
 .latestPosts_cardBody {
   padding: 8px;
