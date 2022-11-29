@@ -1,5 +1,11 @@
+import Cards from "../../components/cards/cards.component"
+
 const Home = () => {
-  return <></>
+  return (
+  <>
+    <Cards />
+  </>
+  )
 }
 
 export default Home
