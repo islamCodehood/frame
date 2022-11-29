@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/home/home.component';
+import Films from './pages/films/films.component';
+import Lists from './pages/lists/lists.component';
+import Journal from './pages/journal/journal.component';
+import Members from './pages/members/members.component';
+import Header from './components/header/header.component';
+import Auth from './pages/auth/auth.component';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="wrapper">
+      <Header />
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/films' element={<Films />} />
+				<Route path='/lists' element={<Lists />} />
+				<Route path='/journal' element={<Journal />} />
+				<Route path='/members' element={<Members />} />
+				<Route path='/auth' element={<Auth />} />
+			</Routes>
+		</div>
+	);
 }
 
 export default App;
