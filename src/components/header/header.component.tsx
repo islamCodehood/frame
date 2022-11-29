@@ -37,7 +37,6 @@ const Header = () => {
           }
           alt="movie"
         />
-       
 
         <div className="overlay"></div>
       </div>
