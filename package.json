@@ -24,7 +24,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "pretty": "npx prettier --write . && git add . && git commit -m \"format code\""
+        "pretty": "npx prettier --write . && git add . && git commit -m \"format code\" && git push origin"
     },
     "eslintConfig": {
         "extends": [
