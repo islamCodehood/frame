@@ -8,6 +8,7 @@ import Members from './pages/members/members.component'
 import Header from './components/header/header.component'
 import Auth from './pages/auth/auth.component'
 import Footer from './components/footer/footer.component'
+import Movie from './pages/movie/movie.component'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/journal" element={<Journal />} />
           <Route path="/members" element={<Members />} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/:id" element={<Movie />} />
         </Routes>
       </main>
       <Footer />
