@@ -6,7 +6,7 @@ type Props = {
   film: Movie
 }
 
-const Card = ({ film }: Props) => {
+const MovieCard = ({ film }: Props) => {
   return (
     <Link to={`/${film.id}`} className="latestPosts_card">
       <div className="latestPosts_cardImage">
@@ -25,4 +25,4 @@ const Card = ({ film }: Props) => {
   )
 }
 
-export default Card
+export default MovieCard

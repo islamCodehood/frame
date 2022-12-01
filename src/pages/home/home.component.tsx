@@ -1,9 +1,9 @@
-import Cards from '../../components/cards/cards.component'
+import MoviesCards from '../../components/moviesCards/moviesCards.component'
 
 const Home = () => {
   return (
     <>
-      <Cards />
+      <MoviesCards />
     </>
   )
 }

@@ -1,10 +1,10 @@
-import Card from '../card/card.component'
+import MovieCard from '../movieCard/movieCard.component'
 import './cards.style.css'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Movie } from '../../types'
 
-const Cards = () => {
+const MoviesCards = () => {
   const [movies, setMovies] = useState<Movie[]>([])
   const getNowPlaying = async () => {
     const { data } = await axios.get(
@@ -26,11 +26,11 @@ const Cards = () => {
       <h2 className="latestPosts_title">Now Playing</h2>
       <div className="latestPosts_cards">
         {movies.map((movie) => (
-          <Card key={movie.id} film={movie} />
+          <MovieCard key={movie.id} film={movie} />
         ))}
       </div>
     </section>
   )
 }
 
-export default Cards
+export default MoviesCards
