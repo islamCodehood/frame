@@ -32,7 +32,8 @@ const Header = () => {
         <img
           className="image"
           src={
-            `https://image.tmdb.org/t/p/original${randomMovie?.backdrop_path}` ||
+            randomMovie ?
+            `https://image.tmdb.org/t/p/original${randomMovie?.backdrop_path}` :
             image
           }
           alt="movie"
