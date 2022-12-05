@@ -1,49 +1,18 @@
-.latestPosts_card {
-  display: flex;
-  gap: 12px;
-  background-color: #fff;
-  transition: all 0.3s ease-in-out;
-  border-radius: 5px;
+.movieCard {
+  @apply  flex gap-3 bg-white rounded-md md:p-0 md:flex-col md:justify-start md:gap-0
+          w-1/3 md:w-fit ;
 }
 
-@media screen and (min-width: 768px) {
-  .latestPosts_card {
-    padding: 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 0;
-  }
+
+
+.movieCard_image img {
+  @apply w-full rounded;
 }
 
-@media screen and (min-width: 992px) {
-  .latestPosts_card {
-    padding: 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 0;
-  }
+.movieCard_body {
+  @apply p-2 md:p-3 lg:p-6;
 }
 
-.latestPosts_cardImage img {
-  width: 100%;
-  border-radius: 3px;
-}
-
-.latestPosts_cardBody {
-  padding: 8px;
-}
-
-@media screen and (min-width: 768px) {
-  .latestPosts_cardBody {
-    padding: 12px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .latestPosts_cardBody {
-    padding: 24px;
-  }
-}
-
-.latestPosts_cardTitle {
-  font-weight: 700;
+.movieCard_title {
+  @apply font-bold;
 }
