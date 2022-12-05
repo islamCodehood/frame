@@ -10,7 +10,7 @@ type Props = {
 const StoryCard = ({ film }: Props) => {
   const { width } = useWindowDimensions()
   return (
-    <div  className="storyCard">
+    <div className="storyCard">
       <div className="storyCard_image">
         <img
           src={`https://image.tmdb.org/t/p/w500${film.backdrop_path}`}
@@ -20,10 +20,9 @@ const StoryCard = ({ film }: Props) => {
       </div>
 
       <div className="storyCard_body">
-          <h3 className="storyCard_title">{film.title}</h3>
-          <p>{film.overview}</p>
-
-        </div> 
+        <h3 className="storyCard_title">{film.title}</h3>
+        <p>{film.overview}</p>
+      </div>
     </div>
   )
 }

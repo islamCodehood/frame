@@ -13,7 +13,9 @@ const MovieCard = ({ film }: Props) => {
     <Link to={`/${film.id}`} className="movieCard">
       <div className="movieCard_image">
         <img
-          src={`https://image.tmdb.org/t/p/${width >= 768 ? 'w200': 'w300'}${film.poster_path}`}
+          src={`https://image.tmdb.org/t/p/${width >= 768 ? 'w200' : 'w300'}${
+            film.poster_path
+          }`}
           width="100%"
           alt="project system"
         />

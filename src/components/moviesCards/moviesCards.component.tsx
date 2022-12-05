@@ -30,7 +30,9 @@ const MoviesCards = () => {
           <MovieCard key={movie.id} film={movie} />
         ))}
       </div>
-      <Link to="/films" className="movies_moreLink">see more.. </Link>
+      <Link to="/films" className="movies_moreLink">
+        see more..{' '}
+      </Link>
     </section>
   )
 }

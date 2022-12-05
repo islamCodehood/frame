@@ -32,9 +32,9 @@ const Header = () => {
         <img
           className="image"
           src={
-            randomMovie ?
-            `https://image.tmdb.org/t/p/original${randomMovie?.backdrop_path}` :
-            image
+            randomMovie
+              ? `https://image.tmdb.org/t/p/original${randomMovie?.backdrop_path}`
+              : image
           }
           alt="movie"
           title={randomMovie?.title}

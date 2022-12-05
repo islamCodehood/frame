@@ -1,10 +1,9 @@
 .storyCard {
   /* @apply  flex-col rounded-md md:p-0 md:flex-col md:justify-start */
-         @apply mb-5;
-         -webkit-column-break-inside: avoid;
-          page-break-inside: avoid;
-               break-inside: avoid;
-          
+  @apply mb-5;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .storyCard_image {
@@ -15,7 +14,7 @@
 }
 
 .storyCard_body {
-  @apply p-2 md:p-3 lg:p-6 ;
+  @apply p-2 md:p-3 lg:p-6;
   background-color: #202830;
 }
 

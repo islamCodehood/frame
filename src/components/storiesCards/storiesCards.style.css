@@ -3,7 +3,6 @@
 }
 .stories_title {
   @apply mb-6 font-semibold text-lg md:text-2xl;
-  
 }
 
 .stories_cards {
@@ -12,6 +11,5 @@
 }
 
 .stories_moreLink {
-  @apply mt-3  inline-block  
+  @apply mt-3  inline-block;
 }
-
