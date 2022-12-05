@@ -17,7 +17,7 @@ const Header = () => {
       `https://api.themoviedb.org/3/movie/popular?api_key=6528ff68dbc27d13fb177793f4c69f9d&language=en-US&page=${randomPage}`
     )
     const randomMovie = data.results[randomResult]
-    console.log(randomMovie.backdrop_path)
+    console.log(randomMovie)
     return randomMovie
   }
 
@@ -37,6 +37,7 @@ const Header = () => {
             image
           }
           alt="movie"
+          title={randomMovie?.title}
         />
 
         <div className="overlay"></div>
