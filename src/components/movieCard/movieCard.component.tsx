@@ -1,24 +1,26 @@
-import './card.style.css'
+import './movieCard.style.css'
 import { Movie } from '../../types'
 import { Link } from 'react-router-dom'
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 
 type Props = {
   film: Movie
 }
 
 const MovieCard = ({ film }: Props) => {
+  const { width } = useWindowDimensions()
   return (
-    <Link to={`/${film.id}`} className="latestPosts_card">
-      <div className="latestPosts_cardImage">
+    <Link to={`/${film.id}`} className="movieCard">
+      <div className="movieCard_image">
         <img
-          src={`https://image.tmdb.org/t/p/w200${film.poster_path}`}
+          src={`https://image.tmdb.org/t/p/${width >= 768 ? 'w200': 'w300'}${film.poster_path}`}
           width="100%"
           alt="project system"
         />
       </div>
 
-      {/* <div className="latestPosts_cardBody">
-          <h3 className="latestPosts_cardTitle">Never Stop Learning</h3>
+      {/* <div className="movieCard_body">
+          <h3 className="movieCard_title">Never Stop Learning</h3>
           <p>lorem ipsum dolor sit amet, consectetur adipisicing</p>
         </div> */}
     </Link>
