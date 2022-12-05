@@ -1,0 +1,17 @@
+.stories {
+  @apply px-16;
+}
+.stories_title {
+  @apply mb-6 font-semibold text-lg md:text-2xl;
+  
+}
+
+.stories_cards {
+  /* @apply flex items-center justify-center gap-3 flex-wrap lg:justify-start; */
+  @apply columns-2 md:columns-3 lg:columns-4;
+}
+
+.stories_moreLink {
+  @apply mt-3  inline-block  
+}
+
