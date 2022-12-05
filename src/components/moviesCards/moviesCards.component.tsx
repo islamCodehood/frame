@@ -1,8 +1,9 @@
 import MovieCard from '../movieCard/movieCard.component'
-import './cards.style.css'
+import './moviesCards.style.css'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Movie } from '../../types'
+import { Link } from 'react-router-dom'
 
 const MoviesCards = () => {
   const [movies, setMovies] = useState<Movie[]>([])
@@ -22,13 +23,14 @@ const MoviesCards = () => {
   }, [movies])
 
   return (
-    <section className="latestPosts">
-      <h2 className="latestPosts_title">Now Playing</h2>
-      <div className="latestPosts_cards">
+    <section className="movies">
+      <h2 className="movies_title">Now Playing</h2>
+      <div className="movies_cards">
         {movies.map((movie) => (
           <MovieCard key={movie.id} film={movie} />
         ))}
       </div>
+      <Link to="/films" className="movies_moreLink">see more.. </Link>
     </section>
   )
 }
