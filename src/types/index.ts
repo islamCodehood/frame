@@ -16,12 +16,12 @@ export type Movie = {
 }
 
 export type Story = {
-  title: string,
-  link: string,
-  excerpt: string,
-  categories: string[],
-  imagePath: string,
-  author: string,
-  date: string,
-  id: string,
+  title: string
+  link: string
+  excerpt: string
+  categories: string[]
+  imagePath: string
+  author: string
+  date: string
+  id: string
 }

@@ -8,9 +8,7 @@ import { Link } from 'react-router-dom'
 const StoriesCards = () => {
   const [stories, setStories] = useState<Story[]>([])
   const getStories = async () => {
-    const { data } = await axios.get(
-      'http://localhost:5000/story'
-    )
+    const { data } = await axios.get('http://localhost:5000/story')
     return data.stories
   }
 
@@ -26,9 +24,11 @@ const StoriesCards = () => {
     <section className="stories">
       <h2 className="stories_title">Recent Stories</h2>
       <div className="stories_cards">
-        {stories?.length ? stories.map((story) => (
-          <StoryCard key={story.id} story={story} />
-        )) : <p>Loading...</p>}
+        {stories?.length ? (
+          stories.map((story) => <StoryCard key={story.id} story={story} />)
+        ) : (
+          <p>Loading...</p>
+        )}
         {}
       </div>
       <Link to="/films" className="stories_moreLink">
