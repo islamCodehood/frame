@@ -6,7 +6,7 @@
 }
 
 .movies_cards {
-  @apply flex items-center justify-center gap-3 flex-wrap lg:justify-start;
+  @apply flex items-center justify-center gap-3 flex-wrap;
 }
 
 .movies_moreLink {
