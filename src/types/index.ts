@@ -14,3 +14,14 @@ export type Movie = {
   vote_average: number
   vote_count: number
 }
+
+export type Story = {
+  title: string,
+  link: string,
+  excerpt: string,
+  categories: string[],
+  imagePath: string,
+  author: string,
+  date: string,
+  id: string,
+}
