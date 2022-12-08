@@ -2,20 +2,20 @@ import StoryCard from '../storyCard/storyCard.component'
 import './storiesCards.style.css'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Movie } from '../../types'
+import { Story } from '../../types'
 import { Link } from 'react-router-dom'
 
 const StoriesCards = () => {
-  const [stories, setStories] = useState<Movie[]>([])
-  const getNowPlaying = async () => {
+  const [stories, setStories] = useState<Story[]>([])
+  const getStories = async () => {
     const { data } = await axios.get(
-      'https://api.themoviedb.org/3/movie/now_playing?api_key=6528ff68dbc27d13fb177793f4c69f9d&language=en-US'
+      'http://localhost:5000/story'
     )
-    return data.results
+    return data.stories
   }
 
   useEffect(() => {
-    getNowPlaying().then((data) => setStories(data))
+    getStories().then((data) => setStories(data))
   }, [])
 
   useEffect(() => {
@@ -26,9 +26,10 @@ const StoriesCards = () => {
     <section className="stories">
       <h2 className="stories_title">Recent Stories</h2>
       <div className="stories_cards">
-        {stories.map((movie) => (
-          <StoryCard key={movie.id} film={movie} />
-        ))}
+        {stories?.length ? stories.map((story) => (
+          <StoryCard key={story.id} story={story} />
+        )) : <p>Loading...</p>}
+        {}
       </div>
       <Link to="/films" className="stories_moreLink">
         see more..{' '}
