@@ -19,13 +19,25 @@ const StoryCard = ({ story }: Props) => {
 
       <div className="storyCard_body">
         <h3 className="storyCard_title">{story.title}</h3>
-        <a href={story.url} target="_blank" rel="noreferrer" className="storyCard_source" >{story.source}</a>
-          <img  className="storyCard_flag" src={flag} alt="" />
+        <a
+          href={story.url}
+          target="_blank"
+          rel="noreferrer"
+          className="storyCard_source"
+        >
+          {story.source}
+        </a>
+        <img className="storyCard_flag" src={flag} alt="" />
         <p>{story.excerpt}</p>
-        <a target="_blank" className="storyCard_more" rel="noreferrer" href={story.link}>
+        <a
+          target="_blank"
+          className="storyCard_more"
+          rel="noreferrer"
+          href={story.link}
+        >
           Read Story
         </a>
-          <img  className="storyCard_anotherTab" src={share} alt="" />
+        <img className="storyCard_anotherTab" src={share} alt="" />
       </div>
     </div>
   )
