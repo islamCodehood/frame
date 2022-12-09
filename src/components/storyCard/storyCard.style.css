@@ -20,3 +20,21 @@
 .storyCard_title {
   @apply md:font-bold text-white text-xl mb-3;
 }
+
+.storyCard_more,
+.storyCard_source {
+  color: #c6dcf2;
+  border-bottom: 1px dotted;
+}
+.storyCard_more:hover,
+.storyCard_source:hover {
+  color: #c6dcf294;
+}
+
+.storyCard_flag {
+  @apply w-4 inline;
+}
+
+.storyCard_anotherTab {
+  @apply w-4 inline ml-1;
+}
