@@ -24,4 +24,6 @@ export type Story = {
   author: string
   date: string
   id: string
+  source: string
+  url: string
 }
