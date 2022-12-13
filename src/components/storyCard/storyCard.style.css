@@ -13,12 +13,12 @@
 }
 
 .storyCard_body {
-  @apply p-2 md:p-3 lg:p-6 rounded-b;
+  @apply p-2 md:p-3 lg:p-6 rounded-b text-sm md:text-base;
   background-color: #202830;
 }
 
 .storyCard_title {
-  @apply md:font-bold text-white text-xl mb-3;
+  @apply font-semibold lg:font-bold text-white  lg:text-lg xl:text-xl mb-3;
 }
 
 .storyCard_more,

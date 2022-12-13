@@ -1,8 +1,8 @@
 .stories {
-  @apply px-16;
+  /* @apply md:px-8; */
 }
 .stories_title {
-  @apply mb-6 font-semibold text-lg md:text-2xl;
+  @apply mb-6 font-semibold text-lg md:text-xl;
 }
 
 .stories_cards {
@@ -11,5 +11,5 @@
 }
 
 .stories_moreLink {
-  @apply mt-3  inline-block;
+  @apply mt-3 text-lg inline-block;
 }
