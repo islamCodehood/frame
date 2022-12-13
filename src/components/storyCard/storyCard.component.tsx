@@ -9,7 +9,6 @@ type Props = {
 }
 
 const StoryCard = ({ story }: Props) => {
-  console.log(story)
   const { width } = useWindowDimensions()
   return (
     <div className="storyCard">

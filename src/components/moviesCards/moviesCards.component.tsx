@@ -26,8 +26,9 @@ const MoviesCards = () => {
     <section className="movies">
       <h2 className="movies_title">Now Playing</h2>
       <div className="movies_cards">
-        {movies.map((movie) => 
-          movie.poster_path && <MovieCard key={movie.id} film={movie} />
+        {movies.map(
+          (movie) =>
+            movie.poster_path && <MovieCard key={movie.id} film={movie} />
         )}
       </div>
       <Link to="/films" className="movies_moreLink">

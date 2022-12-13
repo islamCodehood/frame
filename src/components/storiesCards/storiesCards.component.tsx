@@ -25,7 +25,7 @@ const StoriesCards = () => {
       <h2 className="stories_title">Recent Stories</h2>
       <div className="stories_cards">
         {stories?.length ? (
-          stories.map((story) => <StoryCard key={story._id} story={story} /> )
+          stories.map((story) => <StoryCard key={story._id} story={story} />)
         ) : (
           <p>Loading...</p>
         )}
