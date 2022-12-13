@@ -1,6 +1,4 @@
-.wrapper {
-  @apply px-5;
-}
+
 
 .main {
   @apply my-8 px-4;
