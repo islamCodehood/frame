@@ -23,7 +23,7 @@ export type Story = {
   imagePath: string
   author: string
   date: string
-  id: string
+  _id: string
   source: string
   url: string
 }
