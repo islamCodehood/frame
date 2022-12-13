@@ -1,0 +1,15 @@
+.reviews {
+  @apply my-16 lg:px-12;
+}
+.reviews_title {
+  @apply mb-6 font-semibold text-lg md:text-xl;
+}
+
+.reviews_cards {
+  /* @apply flex items-center justify-center gap-1 flex-wrap; */
+  @apply columns-1 md:columns-2 lg:columns-3;
+}
+
+.reviews_moreLink {
+  @apply mt-3  text-lg inline-block;
+}
