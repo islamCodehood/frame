@@ -1,14 +1,15 @@
 .movies {
-  @apply px-16;
+  @apply my-16;
 }
 .movies_title {
-  @apply mb-6 font-semibold text-lg md:text-2xl;
+  @apply mb-6 font-semibold text-lg md:text-xl;
 }
 
 .movies_cards {
-  @apply flex items-center justify-center gap-3 flex-wrap;
+  /* @apply flex items-center justify-center gap-1 flex-wrap; */
+  @apply columns-3 md:columns-4 lg:columns-6;
 }
 
 .movies_moreLink {
-  @apply mt-3  inline-block;
+  @apply mt-3  text-lg inline-block;
 }
