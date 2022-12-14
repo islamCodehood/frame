@@ -1,7 +1,7 @@
 .reviewCard {
-  @apply flex gap-3 p-2 md:gap-0  mb-5 ;
+  @apply flex gap-3 p-2 md:gap-0  mb-5;
   border-bottom: 0.2px solid rgba(153, 170, 187, 0.338);
-          /* w-1/5 md:w-1/5; */;
+  /* w-1/5 md:w-1/5; */
 }
 
 .reviewCard_image img {
@@ -17,20 +17,20 @@
 }
 
 .reviewCard_rate {
-  @apply text-green-500 text-lg
+  @apply text-green-500 text-lg;
 }
 
 .reviewCard_date {
-  @apply text-lg md:text-xl font-light
+  @apply text-lg md:text-xl font-light;
 }
 
 .reviewCard_user {
-  @apply flex items-center
+  @apply flex items-center;
 }
 .reviewCard_user_name {
-  @apply text-sm
+  @apply text-sm;
 }
 
 .reviewCard_user_avatar {
-  @apply w-6 h-6 rounded-full border-2 inline-block mr-2
+  @apply w-6 h-6 rounded-full border-2 inline-block mr-2;
 }
